@@ -5,21 +5,21 @@
 class Paco < Formula
   desc "TUI package.json script runner"
   homepage "https://github.com/vianch/paco"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vianch/paco/releases/download/v0.2.0/paco_0.2.0_darwin_amd64.tar.gz"
-      sha256 "9d0de77e70a99b5ba1becf9053087b56364805a37fa0c6655a0863d711b50fb7"
+      url "https://github.com/vianch/paco/releases/download/v0.3.0/paco_0.3.0_darwin_amd64.tar.gz"
+      sha256 "bef40848670b3cf0048cea6b14a10a7db4c59dbb58de431b9727e85785f76dcd"
 
       define_method(:install) do
         bin.install "paco"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vianch/paco/releases/download/v0.2.0/paco_0.2.0_darwin_arm64.tar.gz"
-      sha256 "75445eeceb1352b595cf0910f09c157c52613350f32dd60b107727258ab157f4"
+      url "https://github.com/vianch/paco/releases/download/v0.3.0/paco_0.3.0_darwin_arm64.tar.gz"
+      sha256 "a6bde6b3d8165ad06cf4c39b1a251b3b7e9bbb37821b6efdb023fc6d63ea5a7a"
 
       define_method(:install) do
         bin.install "paco"
@@ -29,15 +29,15 @@ class Paco < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vianch/paco/releases/download/v0.2.0/paco_0.2.0_linux_amd64.tar.gz"
-      sha256 "156976fad2b5769aa85dc1ae377dc3490311b8f52f58f743d9a405942d961337"
+      url "https://github.com/vianch/paco/releases/download/v0.3.0/paco_0.3.0_linux_amd64.tar.gz"
+      sha256 "ea158f68800ca411c8f7584329b652e47b89d2d9991266987982933d418af3e5"
       define_method(:install) do
         bin.install "paco"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vianch/paco/releases/download/v0.2.0/paco_0.2.0_linux_arm64.tar.gz"
-      sha256 "b65a7df22fdd515051d0137812cea4edc9a2b4005a35a4e0943c9fb81ca66d2c"
+      url "https://github.com/vianch/paco/releases/download/v0.3.0/paco_0.3.0_linux_arm64.tar.gz"
+      sha256 "978e48ba446634f4661e69f18da164967e34940c8e9115bd5f8db5bdf87bc6f5"
       define_method(:install) do
         bin.install "paco"
       end
